@@ -20,17 +20,7 @@ const styles = StyleSheet.create({
 export default function Answers({ answers, answerSelected }: AnswersProps) {
   return (
     <View style={{ ...styles.container }}>
-      {answers.map((_, index) => (
-        <Fragment key={index}>
-          <AnswerBtn
-            answer={answers[index]}
-            variant="primary"
-            onPress={() => {
-              answerSelected(answers[index], index);
-            }}
-          />
-        </Fragment>
-      ))}
+     
     </View>
   );
 }
